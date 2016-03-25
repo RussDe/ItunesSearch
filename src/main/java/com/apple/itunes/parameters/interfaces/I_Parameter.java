@@ -1,4 +1,4 @@
-package parameters;
+package com.apple.itunes.parameters.interfaces;
 
 import java.io.UnsupportedEncodingException;
 
@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
  */
 public interface I_Parameter {
     // the first starting word in the query
-    public final static String KEY = "";
+    String KEY = "";
 
     // create the final query
     String createQuery() throws UnsupportedEncodingException;

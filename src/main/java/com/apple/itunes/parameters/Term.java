@@ -1,4 +1,6 @@
-package parameters;
+package com.apple.itunes.parameters;
+
+import com.apple.itunes.parameters.interfaces.I_Parameter;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

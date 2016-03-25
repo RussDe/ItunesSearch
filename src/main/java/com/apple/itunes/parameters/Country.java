@@ -1,4 +1,4 @@
-package parameters;
+package com.apple.itunes.parameters;
 
 /*
  *  The two-letter country code for the store you want to search.
@@ -6,18 +6,13 @@ package parameters;
  *  For example: US. The default is US
  */
 
+import com.apple.itunes.parameters.interfaces.I_Parameter;
+
 // required
 public class Country implements I_Parameter {
     // creating the first starting word in the query
     private final String KEY = "country=";
-    // default country
-    private final String DEFAULT_COUNTRY = "US";
     private final String COUNTRY;
-
-    // default constructor
-    public Country() {
-        COUNTRY = DEFAULT_COUNTRY;
-    }
 
     //constructor
     public Country(String value) {

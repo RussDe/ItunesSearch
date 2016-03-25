@@ -1,5 +1,7 @@
-package parameters;
+package com.apple.itunes.parameters.enums;
 
+
+import com.apple.itunes.parameters.interfaces.I_Parameter;
 
 /**
  * The media type you want to search for. For example: movie. The default is all.

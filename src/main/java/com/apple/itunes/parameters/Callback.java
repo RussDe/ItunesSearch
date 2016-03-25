@@ -1,6 +1,6 @@
-package parameters;
+package com.apple.itunes.parameters;
 
-import java.io.UnsupportedEncodingException;
+import com.apple.itunes.parameters.interfaces.I_Parameter;
 
 /**
  * The name of the Javascript callback function you want to use when returning search results to your website.
@@ -9,7 +9,7 @@ import java.io.UnsupportedEncodingException;
 
 // required (for cross-site searches)
 public class Callback implements I_Parameter {
-    private final String KEY = "callback";
+    private final String KEY = "callback=";
     private final String CALLBACK;
 
     //constructor

@@ -1,4 +1,6 @@
-package parameters;
+package com.apple.itunes.parameters.enums;
+
+import com.apple.itunes.parameters.interfaces.I_Parameter;
 
 /**
  * The search result key version you want to receive back from your search.
@@ -6,22 +8,15 @@ package parameters;
  */
 public enum E_Version implements I_Parameter {
     //possible values
-    ONE("1"),
+    One("1"),
     TWO("2");
 
-    private final String DEFAULT_VERSION = "2";
+    private final static String KEY = "version=";
     private final String VERSION;
-
-    //default constructor
-    E_Version() {
-        VERSION = DEFAULT_VERSION;
-    }
 
     //constructor
     E_Version(String value) {
-        if (Integer.parseInt(value) == 1 || Integer.parseInt(value) == 0) {
-            VERSION = value;
-        } else VERSION = DEFAULT_VERSION;
+        VERSION = value;
     }
 
     //creating the final query

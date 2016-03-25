@@ -1,4 +1,4 @@
-package parameters;
+package com.apple.itunes.parameters.interfaces;
 
 /**
  * The attribute you want to search for in the stores, relative to the specified media type.
@@ -7,6 +7,6 @@ package parameters;
  * instead of all artists who have ever recorded a song with the word “maroon” in the title.
  * The default is all attributes associated with the specified media type.
  */
-public class Attribute implements I_Parameter {
+public interface I_Attribute extends I_Parameter {
 
 }
